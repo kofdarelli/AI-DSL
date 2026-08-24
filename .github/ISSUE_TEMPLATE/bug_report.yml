@@ -1,0 +1,32 @@
+name: Parser bug
+description: Report incorrect tokenization, parsing, diagnostics, or generated documentation.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: Minimal DSL input
+      description: Provide the smallest non-sensitive input that reproduces the behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual and expected result
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Lexer, Grammar, Parser, Error diagnostics, Generated documentation, CLI]
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and used a minimal non-proprietary example.
+          required: true

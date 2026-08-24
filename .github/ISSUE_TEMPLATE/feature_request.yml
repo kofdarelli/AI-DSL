@@ -1,0 +1,22 @@
+name: Language proposal
+description: Propose a focused syntax, tooling, or documentation improvement.
+title: "[Proposal]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+    validations:
+      required: true
+  - type: textarea
+    id: syntax
+    attributes:
+      label: Proposed syntax and behavior
+      description: Include a short example when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: grammar
+    attributes:
+      label: LL(1) and compatibility considerations
