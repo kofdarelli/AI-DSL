@@ -38,7 +38,7 @@ AI-DSL is an AUB EECE 334 language-design project. The current phase performs sy
 flowchart LR
     S[DSL source] --> L[Lexer]
     L --> T[Positioned tokens]
-    T --> P[LL(1) parser]
+    T --> P["LL(1) parser"]
     G[Grammar metadata] --> P
     G --> D[Generated documentation]
     P --> R[Accepted workflow or syntax error]
