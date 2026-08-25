@@ -73,6 +73,14 @@ Regenerate the grammar documentation after changing `src/grammar.py`:
 python -m src.docgen
 ```
 
+### Inspecting Tokens
+
+To print the token stream (token type, value, line, and column) without parsing:
+
+```bash
+python main.py --tokens path/to/file.dsl
+```
+
 ## Language shape
 
 An AI-DSL program contains zero or more `agent` blocks followed by one `system` block. Agents declare tools and typed tasks. The system block can declare and assign variables, invoke tasks with `run`, branch with `if`, and iterate lists with `for`.
